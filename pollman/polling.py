@@ -22,7 +22,8 @@ from ceilometer import sample
 
 APPID = os.environ.get('WEATHER_APP_ID')
 UNIT = 'metric'
-WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather?id=%(id)s&APPID=%(appid)s&units=%(unit)s'
+WEATHER_URL = ('http://api.openweathermap.org/data/2.5/weather?'
+               'id=%(id)s&APPID=%(appid)s&units=%(unit)s')
 LOG = log.getLogger(__name__)
 
 
